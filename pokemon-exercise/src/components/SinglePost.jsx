@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 const SinglePost = () => {
   const [post, setPost] = useState ({});
     useEffect(()=> {
-
+//using a different API
         const fetchPosts = async () => {
             const res = await fetch("https://rickandmortyapi.com/api/character/");
             const data = await res.json();
@@ -16,8 +16,14 @@ console.log('');
 
   return (
     <>
-      <label>Select an ID number 1-100</label>
-      <input type="number" min={1} max={100}></input> 
+    <div>
+      
+      <label> Select an ID number for Rick and Morty API between 1-100 </label>
+      <input type="number" min={1} max={100}></input>
+      <br />
+      <button>Try it</button>
+      
+    </div> 
     </>
   );
 };
