@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import Pokemon from './components/Pokemon'
 import Posts from './components/Posts'
 import './App.css'
+import SinglePost from './components/SinglePost'
 
 function App() {
  
@@ -10,7 +11,8 @@ function App() {
     <>
       <h2>Pokemon API</h2>
       <Pokemon />
-      <Posts />
+      {/* <Posts /> */}
+      <SinglePost />
     </>
   )
 }
